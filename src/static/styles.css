@@ -142,3 +142,79 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #eee;
+}
+
+.participants strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 14px;
+}
+
+.participants ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+  max-height: 120px;
+  overflow: auto;
+}
+
+.participants li {
+  padding: 6px 0;
+  border-bottom: 1px solid #fafafa;
+  color: #444;
+  font-size: 14px;
+}
+
+/* participants list without bullets and with remove button */
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #fafafa;
+}
+
+.participant-email {
+  color: #444;
+  font-size: 14px;
+  margin-right: 8px;
+  word-break: break-all;
+}
+
+.participant-remove {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.participant-remove:hover {
+  background: rgba(198, 40, 40, 0.08);
+}
+
+/* empty state */
+.participants ul.none {
+  list-style-type: none;
+  padding-left: 0;
+}
+.participants ul.none li {
+  color: #888;
+  font-style: italic;
+  border-bottom: none;
+}
